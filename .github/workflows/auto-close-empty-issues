@@ -1,0 +1,8 @@
+name: auto-close-empty-issues
+on: 
+  issues:
+    types: [opened]
+jobs:
+  check-issue-body-not-empty:
+    runs-on: ubuntu-latest
+    steps:
