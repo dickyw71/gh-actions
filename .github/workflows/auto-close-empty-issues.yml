@@ -6,7 +6,7 @@ jobs:
   check-issue-body-not-empty:
     runs-on: ubuntu-latest
     steps:
-        - if: github.event.issue.body == 0
+      - if: github.event.issue.body == 0
         name: Close Issue
         uses: peter-evans/close-issue@v1
         with:
